@@ -6,5 +6,10 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Twig_' => array($vendorDir . '/twig/twig/lib'),
+    'cli' => array($vendorDir . '/wp-cli/php-cli-tools/lib'),
+    'WP_CLI' => array($vendorDir . '/wp-cli/wp-cli/php'),
+    'Rize\\UriTemplate' => array($vendorDir . '/rize/uri-template/src'),
+    'Requests' => array($vendorDir . '/rmccue/requests/library'),
+    'Oxymel' => array($vendorDir . '/nb/oxymel'),
+    'Mustache' => array($vendorDir . '/mustache/mustache/src'),
 );
