@@ -15,7 +15,7 @@
 on:
   push:
     branches:
-      - example
+      - master
 
 name: Deploy to Google App Engine
 
@@ -30,7 +30,7 @@ jobs:
         id: deploy
         uses: google-github-actions/deploy-appengine@v0.2.0
         with:
-                deliverables: wordpress-project/app.yaml
+          deliverables: wordpress-project/app.yaml
           project_id: ${{ secrets.GCP_PROJECT }}
           credentials: ${{ secrets.GCP_SA_KEY }}
 
